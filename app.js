@@ -32,9 +32,9 @@ enlaces.forEach(enlace => {
 })
 
 tl.fromTo('.hero__img',{y:'100%',opacity:0},{y:0,opacity:1,duration:0.8},'<30%')
-tl.fromTo('.hero__title',{x:'50%',opacity:0},{x:0,opacity:1},'<30%')
+tl.fromTo('.hero__title',{y:'50%',opacity:0},{y:0,opacity:1},'<30%')
 tl.fromTo('.hero__text-right',{x:'-50%',opacity:0},{x:0,opacity:1},'<')
-tl.fromTo('.news',{x:'100%',opacity:0},{x:0,opacity:1,duration:0.6},'<30%')
+tl.fromTo('.news',{y:'-50%',opacity:0},{y:0,opacity:1,duration:0.6},'<30%')
 
 
 const tops = document.querySelectorAll('.top__card-wrap')
