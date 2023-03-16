@@ -16,3 +16,28 @@ menu.addEventListener("click", () => {
     menu.classList.add("no-move");
   }
 });
+
+
+
+//GSAP
+const tl = gsap.timeline({defaults: {duration:0.75, ease:"power1.out"}})
+
+tl.fromTo('.header__logo-wrap', {x:'-200%', opacity:0},{x:0, opacity:1})
+
+
+const enlaces = document.querySelectorAll('.header__nav-ul .header__nav-li')
+
+enlaces.forEach(enlace => {
+  tl.fromTo(enlace,{y:'-100%',opacity:0},{y:0,opacity:1,duration:0.3}, '<35%')
+})
+
+tl.fromTo('.hero__img',{y:'100%',opacity:0},{y:0,opacity:1,duration:0.8},'<30%')
+tl.fromTo('.hero__title',{x:'50%',opacity:0},{x:0,opacity:1},'<30%')
+tl.fromTo('.hero__text-right',{x:'-50%',opacity:0},{x:0,opacity:1},'<')
+tl.fromTo('.news',{x:'100%',opacity:0},{x:0,opacity:1,duration:0.6},'<30%')
+
+
+const tops = document.querySelectorAll('.top__card-wrap')
+tops.forEach(top => {
+  tl.fromTo(top,{y:'100%',opacity:0},{y:0,opacity:1,duration:0.6}, '<35%')
+})
