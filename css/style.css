@@ -129,6 +129,7 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 .header__overlay {
   position: absolute;
@@ -159,6 +160,7 @@ body {
   font-size: 1em;
   font-weight: 500;
   color: hsl(236, 13%, 42%);
+  opacity: 0;
   transition: all ease 0.2s;
 }
 .header__nav-li:hover {
@@ -363,6 +365,7 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  opacity: 0;
 }
 .hero__text {
   display: flex;
@@ -376,6 +379,7 @@ body {
   font-size: 3.4em;
   font-weight: 800;
   line-height: 1.05em;
+  opacity: 0;
   color: hsl(240, 100%, 5%);
 }
 .hero__text-right {
@@ -385,6 +389,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 2em;
+  opacity: 0;
 }
 .hero__paragr {
   font-size: 0.92em;
@@ -430,6 +435,7 @@ body {
   flex: 1;
   padding: 2em 1.5em;
   gap: 1.77em;
+  opacity: 0;
 }
 .news__title {
   font-size: 2.2em;
@@ -497,6 +503,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1.5em;
+  opacity: 0;
 }
 .top__img-wrap {
   width: 10em;
