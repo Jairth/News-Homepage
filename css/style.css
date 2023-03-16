@@ -129,6 +129,8 @@ body {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+}
+.header__logo-img {
   opacity: 0;
 }
 .header__overlay {

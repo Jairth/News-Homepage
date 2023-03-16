@@ -22,7 +22,7 @@ menu.addEventListener("click", () => {
 //GSAP
 const tl = gsap.timeline({defaults: {duration:0.75, ease:"power1.out"}})
 
-tl.fromTo('.header__logo-wrap', {x:'-200%', opacity:0},{x:0, opacity:1})
+tl.fromTo('.header__logo-img', {x:'-400%', opacity:0},{x:0, opacity:1,duration:0.8})
 
 
 const enlaces = document.querySelectorAll('.header__nav-ul .header__nav-li')

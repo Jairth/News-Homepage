@@ -22,6 +22,9 @@ $Very-dark-blue: hsl(240, 100%, 5%);
 
   &__logo-wrap{
     @include flexible(flex,row,nowrap,center,center);
+  }
+
+  &__logo-img {
     opacity: 0;
   }
 
