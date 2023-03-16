@@ -62,10 +62,6 @@ $Very-dark-blue: hsl(240, 100%, 5%);
     transform: translate3d(2px,-2px,2px);
   }
 
-  &__nav-a {
-    opacity: 0;
-  }
-
   
   @media (max-width:767px) {
     &__nav {
@@ -83,14 +79,27 @@ $Very-dark-blue: hsl(240, 100%, 5%);
       opacity: 0;
       font-size: 1.2em;
       font-weight: 500;
-      color: $Very-dark-blue;
-      // transition: all ease .2s;
+      
     }
 
-    // &__nav-li:active {
-    //   color: $Soft-red;
-    // transform: translate3d(2px,-2px,2px);
-    // }
+    &__nav-li:nth-child(1) {
+      transition: opacity .3s ease-in-out .1s;
+    }
+
+    .header__nav-li:nth-child(2) {
+      transition: opacity .3s ease-in-out .25s;
+    }
+
+    .header__nav-li:nth-child(3){
+      transition: opacity .3s ease-in-out .35s;
+    }
+
+    .header__nav-li:nth-child(4){
+      transition: opacity .3s ease-in-out .45s;
+    }
+    .header__nav-li:nth-child(5){
+      transition: opacity .3s ease-in-out .55s;
+    }
 
     &__nav.activo {
       width: 75%;
@@ -106,30 +115,8 @@ $Very-dark-blue: hsl(240, 100%, 5%);
         background-color: transparent;
       }
 
-      .header__nav-li:nth-child(1){
+      .header__nav-li{
         opacity: 1;
-        transition: opacity .3s ease-in-out .1s;
-        transition: transform .3s ease;
-      }
-      .header__nav-li:nth-child(2){
-        opacity: 1;
-        transition: opacity .3s ease-in-out .25s;
-        transition: transform .3s ease;
-      }
-      .header__nav-li:nth-child(3){
-        opacity: 1;
-        transition: opacity .3s ease-in-out .35s;
-        transition: transform .3s ease;
-      }
-      .header__nav-li:nth-child(4){
-        opacity: 1;
-        transition: opacity .3s ease-in-out .45s;
-        transition: transform .3s ease;
-      }
-      .header__nav-li:nth-child(5){
-        opacity: 1;
-        transition: opacity .3s ease-in-out .55s;
-        transition: transform .3s ease;
       }
     }
 

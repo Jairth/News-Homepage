@@ -168,9 +168,6 @@ body {
   color: hsl(5, 85%, 63%);
   transform: translate3d(2px, -2px, 2px);
 }
-.header__nav-a {
-  opacity: 0;
-}
 @media (max-width: 767px) {
   .header__nav {
     position: absolute;
@@ -186,7 +183,21 @@ body {
     opacity: 0;
     font-size: 1.2em;
     font-weight: 500;
-    color: hsl(240, 100%, 5%);
+  }
+  .header__nav-li:nth-child(1) {
+    transition: opacity 0.3s ease-in-out 0.1s;
+  }
+  .header .header__nav-li:nth-child(2) {
+    transition: opacity 0.3s ease-in-out 0.25s;
+  }
+  .header .header__nav-li:nth-child(3) {
+    transition: opacity 0.3s ease-in-out 0.35s;
+  }
+  .header .header__nav-li:nth-child(4) {
+    transition: opacity 0.3s ease-in-out 0.45s;
+  }
+  .header .header__nav-li:nth-child(5) {
+    transition: opacity 0.3s ease-in-out 0.55s;
   }
   .header__nav.activo {
     width: 75%;
@@ -201,30 +212,8 @@ body {
     margin: 0 0 15em 0;
     background-color: transparent;
   }
-  .header__nav.activo .header__nav-li:nth-child(1) {
+  .header__nav.activo .header__nav-li {
     opacity: 1;
-    transition: opacity 0.3s ease-in-out 0.1s;
-    transition: transform 0.3s ease;
-  }
-  .header__nav.activo .header__nav-li:nth-child(2) {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out 0.25s;
-    transition: transform 0.3s ease;
-  }
-  .header__nav.activo .header__nav-li:nth-child(3) {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out 0.35s;
-    transition: transform 0.3s ease;
-  }
-  .header__nav.activo .header__nav-li:nth-child(4) {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out 0.45s;
-    transition: transform 0.3s ease;
-  }
-  .header__nav.activo .header__nav-li:nth-child(5) {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out 0.55s;
-    transition: transform 0.3s ease;
   }
   .header__overlay.activo {
     opacity: 1;
