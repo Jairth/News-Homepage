@@ -162,12 +162,14 @@ body {
   font-size: 1em;
   font-weight: 500;
   color: hsl(236, 13%, 42%);
-  opacity: 0;
   transition: all ease 0.2s;
 }
 .header__nav-li:hover {
   color: hsl(5, 85%, 63%);
   transform: translate3d(2px, -2px, 2px);
+}
+.header__nav-a {
+  opacity: 0;
 }
 @media (max-width: 767px) {
   .header__nav {

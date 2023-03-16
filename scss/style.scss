@@ -54,13 +54,16 @@ $Very-dark-blue: hsl(240, 100%, 5%);
     font-size: 1em;
     font-weight: 500;
     color: $Dark-grayish-blue;
-    opacity: 0;
     transition: all ease .2s;
   }
 
   &__nav-li:hover {
     color: $Soft-red;
     transform: translate3d(2px,-2px,2px);
+  }
+
+  &__nav-a {
+    opacity: 0;
   }
 
   
